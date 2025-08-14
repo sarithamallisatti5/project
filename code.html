@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyFlow - Your Digital Assistant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    .poster {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      font-size: 48px;
+      font-weight: bold;
+      color: #00f7ff;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      height: 60px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .tagline {
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 20px;
+      width: 260px;
+      transition: transform 0.4s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .feature h3 {
+      margin: 10px 0 5px;
+      color: #00ffe7;
+    }
+
+    .cta {
+      margin-top: 30px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .cta a {
+      background: #00ffe7;
+      color: #000;
+      padding: 15px 35px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #00c3ff;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="poster">
+    <div class="logo">
+      <img src="https://img.icons8.com/ios-filled/100/00f7ff/cloud.png" alt="SkyFlow Logo">
+      SkyFlow
+    </div>
+    <div class="tagline">
+      Your smart digital assistant. Simplify. Automate. Excel.
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <img src="https://img.icons8.com/fluency/96/lock.png" alt="Secure">
+        <h3>Secure</h3>
+        <p>Military-grade encryption and identity protection for peace of mind.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/fluency/96/rocket.png" alt="Fast">
+        <h3>Blazing Fast</h3>
+        <p>Experience real-time performance optimized for speed and reliability.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/fluency/96/worldwide-location.png" alt="Accessible">
+        <h3>Global Access</h3>
+        <p>Access your dashboard anytime, anywhere — fully responsive & intuitive.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="https://yourwebapp.example.com" target="_blank">Get Started</a>
+    </div>
+
+    <footer>
+      © 2025 SkyFlow Technologies. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
